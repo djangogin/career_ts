@@ -1,0 +1,177 @@
+const employees = [
+  {
+    id: 1,
+    parentId: "",
+    name: "Лихачев А.Е.",
+    positionName: "Генеральный директор",
+    phone: "+74950000000",
+    email: "director@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description:
+      "Генеральный директор ГК Росатом",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/c61/c6199c73d3637e747bd8b13364dca372.jpg"
+  },
+ {
+    id: 2,
+    parentId: "7",
+    name: "Комаров К.Б.",
+    positionName: "Заместитель генерального директора",
+    phone: "+74950000001",
+    email: "komarov@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Первый заместитель генерального директора - директор Блока по развитию и международному бизнесу",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/7e4/7e4779e609359f3031f268953bc3a4d4.JPG",
+    profileUrl: "https://www.rosatom.ru/about/management/board/komarov/"
+  },
+
+{
+    id: 3,
+    parentId: "9",
+    name: "Локшин А.М.",
+    positionName: "Заместитель генерального директора",
+    phone: "+74950000002",
+    email: "lokshin@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Первый заместитель генерального директора по атомной энергетике",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/b22/Lokshin_s.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/board/lokshin/"
+  },
+{
+    id: 4,
+    parentId: "3",
+    name: "Яковлев Ю.В.",
+    positionName: "Заместитель генерального директора",
+    phone: "+74950000003",
+    email: "yakovlev@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Заместитель генерального директора по государственной политике в области безопасности при использовании атомной энергии в оборонных целях",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/071/071da48da02e9cb70f7dd2ffb1f5d87b.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/board/yakovlev/"
+  },
+    {
+    id: 5,
+    parentId: "3",
+    name: "Шубин О.Н.",
+    positionName: "Заместитель генерального директора",
+    phone: "+74950000004",
+    email: "shubin@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Первый заместитель генерального директора - директор Дирекции по ядерному оружейному комплексу",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/919/ShubinON.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/vicedirectors/shubin/"
+  },
+    {
+    id: 6,
+    parentId: "1",
+    name: "Каменских И.М.",
+    positionName: "Член Правления ",
+    phone: "+74950000005",
+    email: "kamenskih@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Первый заместитель генерального директора Госкорпорации «Росатом» - директор по специальным проектам.",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/919/919c9e865da10e95b4b082069d37684b.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/board/kamenskikh_/"
+  },
+    {
+    id: 7,
+    parentId: "1",
+    name: "Першуков В.А.",
+    positionName: "Член Правления",
+    phone: "+74950000006",
+    email: "pershukov@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Специальный представитель Госкорпорации «Росатом» по международным и научно-техническим проектам",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/6ba/6ba761da263bae341a2b32e07719c1ca.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/board/pershukov/"
+  },
+    {
+    id: 8,
+    parentId: "6",
+    name: "Оленин Ю.А.",
+    positionName: "Заместитель генерального директора",
+    phone: "+74950000007",
+    email: "olenin@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Заместитель генерального директора по науке и стратегии ",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/a2f/a2f71cfa29425ef16bb39853b221e838.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/board/olenin/"
+  },
+    {
+    id: 9,
+    parentId: "1",
+    name: "Обозов С.А.",
+    positionName: "Член Правления",
+    phone: "+74950000008",
+    email: "obozov@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Заместитель генерального директора по развитию производственной системы Госкорпорации «Росатом»",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/706/706142d1b0e2b827d067a5b9559c191b.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/board/obozov/"
+  },
+    {
+    id: 10,
+    parentId: "1",
+    name: "Новиков С.Г.",
+    positionName: "Член Правления",
+    phone: "+74950000009",
+    email: "novikov@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Статс-секретарь - заместитель генерального директора по обеспечению государственных полномочий и бюджетного процесса",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/f76/f76c76f3766261c801d1e41830cfbe78.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/vicedirectors/novikov/"
+  },
+    {
+    id: 11,
+    parentId: "1",
+    name: "Никипелов А.В.",
+    positionName: "Член Правления",
+    phone: "+74950000010",
+    email: "nikipelov@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Заместитель генерального директора Росатома по машиностроению и индустриальным решениям",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/d62/d62ac0484048e524771fa8fde86b96c5.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/board/nikipelov/"
+  },
+
+    {
+    id: 13,
+    parentId: "11",
+    name: "Денисов К.И.",
+    positionName: "Заместитель генерального директора",
+    phone: "+74950000004",
+    email: "denisov@rosatom.ru",
+    team: "",
+    location: "Москва",
+    department: "ГК Росатом",
+    description: "Заместитель генерального директора по безопасности",
+    imageUrl: "https://www.rosatom.ru/upload/medialibrary/76e/76e333f38f0fa629915b4726e11e5ce7.jpg",
+    profileUrl: "https://www.rosatom.ru/about/management/board/denisov/"
+  },
+
+
+
+];
+
+export default employees;
